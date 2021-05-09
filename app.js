@@ -6,7 +6,7 @@ class App(){
         const container = document.createElement('div2');
         document.body.appendChild(container);
    }
-  function echoAR(var API_key)
+  function echoAR()
 {
  
 var echoDB;
