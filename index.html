@@ -87,6 +87,10 @@
             const app = new App();
             window.app = app;
         });
+	    echoAR();
+	    var apiKey = echoDB.apiKey;
+	var db = Object.values(echoDB.db);
+	    
     </script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
             <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -124,7 +128,7 @@
   </body>
      <body>
 	    <div id="background"></div>
-        <h2>Embedded WebAR Experience through echoAR</h1>
+        <h2>Embedded WebAR Experience through echoAR</h2>
         <iframe
            src="https://console.echoar.xyz/webar?key=snowy-sun-4165"
            title="echoAR WebAR iframe element" 
