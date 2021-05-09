@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> infoGOODS</title>
+    <title>     infoGODS</title>
     <meta charset="utf-8" />
-    <meta name="viewport"content="width=device-width, initial-scale= 1.0, user-scalable=no" >
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <style>
         body { margin: 0; }
         canvas { display: block; }
@@ -57,7 +58,7 @@
 </button>
     
     <body style="background-color:powderblue;">
-<h1> WELCOME TO INFOgoods !</h1>
+<h1> WELCOME TO infoGODS !</h1>
 <p>REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
     <script type="module">
         import { App } from './app.js'
@@ -67,7 +68,27 @@
         });
     </script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+        
 
 </body>
-</html>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
 
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script>
+  </body>
+</html>
