@@ -1,4 +1,21 @@
-## Welcome to GitHub Pages
+## INFOgoods AR
+
+This project allows for people to scan a QR code with their phone on any store product and gives the user product information which could be anything that the client("the store holding the products") wants to display. Examples are the following: 
+
+1. The manufacturing process
+2. Health benefits 
+3. What other products go well with it
+4. if TCG then good synergy 
+
+
+
+
+
+### Libraries/external sources this project uses:
+This project uses echoAR and google API.
+
+
+## Information on how to use Github Pages:
 
 You can use the [editor on GitHub](https://github.com/1Hackathon1Projects1/TOhacks2021/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
